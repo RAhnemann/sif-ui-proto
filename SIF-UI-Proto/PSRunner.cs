@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
 using System.Threading;
@@ -228,7 +229,7 @@ namespace SIF_UI_Proto
         {
             outputTabControl.SelectedTab = allTab;
 
-            Run(@"D:\Workspace\SIF-UI-Proto\SIF-UI-Proto\SIFless.ps1");
+            Run(Path.Combine(Environment.CurrentDirectory, "SIFless.ps1"));
         }
 
         private void PSRunner_FormClosing(object sender, FormClosingEventArgs e)

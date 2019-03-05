@@ -1,6 +1,6 @@
 
 if ([Environment]::Is64BitProcess) {
-    Write-Host "64x"
+    Write-Host "64xx"
 }
     Write-Information "Test-Before"
     
