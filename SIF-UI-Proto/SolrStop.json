@@ -1,0 +1,123 @@
+﻿// ---------------------------------------------------- //
+//       SIF-less XM0-CM Configuration                  //
+//       Version 1.0 - Initial Release                  //
+// ---------------------------------------------------- //
+{
+    "Parameters": {
+        "SolrService": {
+            "Type": "string",
+            "DefaultValue": "Solr-7.2.1",
+            "Description": "The name of the Solr service."
+        }
+    },
+    "Tasks": {
+        "StopSolr": {
+            // Stops the Solr service if it is running.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Stopped",
+                "PostDelay": 1000
+            }
+        },
+        "StartSolr": {
+            // Starts the Solr service.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Running",
+                "PostDelay": 8000
+            }
+        },
+        "StopSolr5": {
+            // Stops the Solr service if it is running.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Stopped",
+                "PostDelay": 1000
+            }
+        },
+        "StartSolr5": {
+            // Starts the Solr service.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Running",
+                "PostDelay": 8000
+            }
+        },
+        "StopSolr4": {
+            // Stops the Solr service if it is running.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Stopped",
+                "PostDelay": 1000
+            }
+        },
+        "StartSolr4": {
+            // Starts the Solr service.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Running",
+                "PostDelay": 8000
+            }
+        },
+        "StopSolr3": {
+            // Stops the Solr service if it is running.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Stopped",
+                "PostDelay": 1000
+            }
+        },
+        "StartSolr3": {
+            // Starts the Solr service.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Running",
+                "PostDelay": 8000
+            }
+        },
+        "StopSolr2": {
+            // Stops the Solr service if it is running.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Stopped",
+                "PostDelay": 1000
+            }
+        },
+        "StartSolr2": {
+            // Starts the Solr service.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Running",
+                "PostDelay": 8000
+            }
+        },
+        "StopSolr1": {
+            // Stops the Solr service if it is running.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Stopped",
+                "PostDelay": 1000
+            }
+        },
+        "StartSolr1": {
+            // Starts the Solr service.
+            "Type": "ManageService",
+            "Params":{
+                "Name": "[parameter('SolrService')]",
+                "Status": "Running",
+                "PostDelay": 8000
+            }
+        }
+    }
+}
